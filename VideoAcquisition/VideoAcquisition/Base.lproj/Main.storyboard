@@ -24,14 +24,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhI-vX-lSp">
                                 <rect key="frame" x="16" y="84" width="62" height="30"/>
                                 <state key="normal" title="开始录制"/>
+                                <connections>
+                                    <action selector="startCapturing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2gT-xs-ytS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvJ-lC-hBl">
                                 <rect key="frame" x="16" y="139" width="62" height="30"/>
                                 <state key="normal" title="结束录制"/>
+                                <connections>
+                                    <action selector="stopCapturing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIi-MM-Ewl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70p-Ga-Lnl">
                                 <rect key="frame" x="16" y="194" width="62" height="30"/>
                                 <state key="normal" title="切换镜头"/>
+                                <connections>
+                                    <action selector="rotateCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gn4-GH-fXB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,6 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-143" y="-50"/>
         </scene>
     </scenes>
 </document>
